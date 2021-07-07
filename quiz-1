@@ -1,0 +1,52 @@
+<html lang="en"><head><title>Profile page</title>
+</head><body>แบบสอบถาม<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสอบถาม</title>
+
+
+    <form method="post" action="apply-now.php">
+        <input name="subject" type="hidden" value="Class">
+        <fieldset><legend>แนวคิดที่ช่วยให้ขยะในมหาวิทยาลัยลดลง</legend>
+        <label for="degree">คุณคือใคร</label>
+        <select name="degree" id="degree">
+        <option value="BA">นักศึกษา</option>
+        <option value="BS">บุคคลากร</option>
+        <option value="MBA" selected="selected">บุคคลทั่วไป</option>
+        </select>
+        <br>
+        <label for="studentid">รหัสประจำตัว</label>
+        <input type="password" name="studentid">
+        </fieldset>
+        <fieldset><legend>ประวัติ</legend>
+        <label for="fname">ชื่อ</label>
+        <input type="text" name="fname" id="fname">
+        <br>
+        <label for="lname">นามสกุล</label>
+        <input type="text" name="lname" id="lname">
+        <br>
+ เพศ:
+ <input name="gender" type="radio" id="gm" value="m">
+ <label for="gm">หญิง</label>
+ <input name="gender" type="radio" id="gf" value="f">
+ <label for="gf">ชาย</label>
+ <br>
+ <label for="email">Email</label>
+ <input type="text" name="email" id="email">
+ <label for="tel">Tel</label>
+ <input type="text" name="Tel" id="tel">
+ </fieldset>
+ <p>
+ <textarea name="terms" cols="30" rows="4" readonly="readonly">เล่าแนวคิดของท่านที่จะช่วยลดขยะในมหาวิทยาลัย</textarea>
+ </p>
+ <p>
+ <input type="submit" name="submit" value="Send Form">
+ <input type="reset" value="Clear Form">
+ </p>
+ <div align="center">
+    <a href="page2.html">submit</a>
+<input type="reset" value="cancel">
+<input type="hidden" id="submit_code" value="1234">
+</div>
+</form>
+
+</body></html>
